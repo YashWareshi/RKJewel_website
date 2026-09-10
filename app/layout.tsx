@@ -14,10 +14,12 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Radha Krishna Enterprises Jewels | Premium Jewellery in Mumbai",
+
   description:
     "Discover exquisite gold, diamond and bridal jewellery crafted with passion and timeless Indian artistry. BIS Hallmarked. Certified Diamonds. Lifetime Support.",
   keywords:
     "gold jewellery, diamond jewellery, bridal jewellery, Mumbai, Mira Road, 22K gold, engagement rings",
+  
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
@@ -26,6 +28,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
+      <meta name="google-site-verification" content="lSYlBgGgbO8f9wV3oEPqOObSJjj6X-XqbPLGXMwwQHU" />
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );
