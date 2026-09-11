@@ -72,8 +72,8 @@ export default function ProductCard({
         <p>{product.category}</p>
         <h3>{product.name}</h3>
         <div className="product-price">
-          <strong>{product.price}</strong>
-          {product.oldPrice && <del>{product.oldPrice}</del>}
+          <strong>₹{product.price}</strong>
+          {product.oldPrice && <del>₹{product.oldPrice}</del>}
         </div>
       </div>
     </article>

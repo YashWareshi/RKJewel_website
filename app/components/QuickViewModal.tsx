@@ -60,8 +60,8 @@ export default function QuickViewModal({ product, onClose, onAddToCart }: Props)
             </p>
 
             <div className="qv-price">
-              <strong>{product.price}</strong>
-              {product.oldPrice && <del>{product.oldPrice}</del>}
+              <strong>₹{product.price}</strong>
+              {product.oldPrice && <del>₹{product.oldPrice}</del>}
             </div>
 
             <div className="qv-details">
@@ -99,7 +99,7 @@ export default function QuickViewModal({ product, onClose, onAddToCart }: Props)
               <a
                 className="btn btn-whatsapp"
                 href={`https://wa.me/919967939693?text=${encodeURIComponent(
-                  `Hi! I'm interested in:\n\n${product.name} (${product.category})\nPrice: ${product.price}\n\nPlease share more details.`
+                  `Hi! I'm interested in:\n\n${product.name} (${product.category})\nPrice: ₹${product.price}\n\nPlease share more details.`
                 )}`}
                 target="_blank"
                 rel="noopener noreferrer"
